@@ -1,0 +1,10 @@
+site_name: MKDocs
+
+site_url: https://example.com/
+
+nav:
+- Home: index.md
+- About: about.md
+- User Guide: userGuide.md 
+
+theme: readthedocs
