@@ -4,7 +4,25 @@ site_url: https://example.com/
 
 nav:
 - Home: index.md
-- About: about.md
-- User Guide: userGuide.md 
+- Getting Started: gettingStarted.md
+- User Guide:
+      - 'Installation' : 'installation.md'
+      - 'Writing Your Docs': 'writing-your-docs.md'
+      - 'Choosing Your Theme' : 'choosing-your-theme.md'
+      - 'Customizing Your Theme': 'customizing-your-theme.md'
+      - 'Localizing Your Theme': 'localizing-your-theme.md'
+      - 'Configuration': 'configuration.md'
+      - 'Command Line Interface': 'command-line-interface.md'
+      - 'Deploying Your Docs' : 'deploying-your-docs.md'
+- Developer Guide:
+      - 'Themes' : 'themes.md'
+      - 'Translations': 'translations.md'
+      - 'Pluggings': 'pluggings.md'
+      - 'API Reference' : 'api-reference.md'
+- About: 
+      - 'License' : 'licence.md'
+      - 'Release Note': 'release-note.md'
+      - 'Contributing' : 'contribution.md'
+
 
 theme: readthedocs
