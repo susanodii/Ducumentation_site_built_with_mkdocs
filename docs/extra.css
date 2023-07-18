@@ -1,0 +1,17 @@
+h6 {
+    /* color: rgb(244, 101, 101); */
+  color:  #8ccaf9
+  }
+  h1{
+    font-size: 3rem;
+    font-weight: 300;
+  }
+  h2{
+    font-weight: 200;
+  }
+
+  .box{
+    background-color:#31536d ;
+    color:white;
+    padding: 3rem;
+  }
