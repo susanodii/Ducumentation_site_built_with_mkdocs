@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../extra.css" rel="stylesheet" />
     
       <script>
         // Current page data
@@ -72,6 +73,8 @@
                   <li class="toctree-l1"><a class="reference internal" href="../themes/">Themes</a>
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="./">Translations</a>
+    <ul class="current">
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../pluggings/">Pluggings</a>
                   </li>
@@ -111,7 +114,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                
+                <h1> Translations</h1>
+<hr />
+<p>The built-in themes that are included with MkDocs provide support for translations. This is a guide for translators, which documents the process for contributing new translations and/or updating existing translations. For guidance on modifying the existing themes, see the Contributing Guide. To enable a specific translation see the documentation about the specific theme you are using in the User Guide. For translations of third-party themes, please see the documentation for those themes. For a third-party theme to make use of MkDocs' translation tools and methods, that theme must be properly configured to make use of those tools.</p>
+<h3 id="localization-tooling-prerequisites">Localization tooling prerequisites</h3>
+<p>Theme localization makes use of the babel project for generation and compilation of localization files. You will need to be working from the git working tree on your local machine to make use of the translation commands.</p>
+<p>See the Contributing Guide for direction on how to Install for Development and Submit a Pull Request. The instructions in this document assume that you are working from a properly configured development environment.</p>
+<p>Make sure translation requirements are installed in your environment:</p>
+<pre><code>pip install mkdocs[i18n]
+</code></pre>
+<h3 id="adding-language-translations-to-themes">Adding language translations to themes</h3>
               
             </div>
           </div><footer>

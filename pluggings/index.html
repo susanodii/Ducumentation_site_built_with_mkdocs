@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../extra.css" rel="stylesheet" />
     
       <script>
         // Current page data
@@ -74,6 +75,8 @@
                   <li class="toctree-l1"><a class="reference internal" href="../translations/">Translations</a>
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="./">Pluggings</a>
+    <ul class="current">
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../api-reference/">API Reference</a>
                   </li>
@@ -111,7 +114,18 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                
+                <h1>MkDocs Plugins</h1>
+<hr />
+<h3 id="installing-plugins">Installing Plugins</h3>
+<p>Before a plugin can be used, it must be installed on the system. If you are using a plugin which comes with MkDocs, then it was installed when you installed MkDocs. However, to install third party plugins, you need to determine the appropriate package name and install it using pip:</p>
+<pre><code>pip install mkdocs-foo-plugin
+</code></pre>
+<p>Once a plugin has been successfully installed, it is ready to use. It just needs to be enabled in the configuration file. The Best-of-MkDocs page has a large list of plugins that you can install and use.</p>
+<h3 id="using-plugins">Using Plugins</h3>
+<p>The plugins configuration option should contain a list of plugins to use when building the site. Each "plugin" must be a string name assigned to the plugin (see the documentation for a given plugin to determine its "name"). A plugin listed here must already be installed.</p>
+<pre><code>plugins:
+    - search
+</code></pre>
               
             </div>
           </div><footer>

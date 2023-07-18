@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../extra.css" rel="stylesheet" />
     
       <script>
         // Current page data
@@ -61,6 +62,8 @@
                   <li class="toctree-l1"><a class="reference internal" href="../localizing-your-theme/">Localizing Your Theme</a>
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="./">Configuration</a>
+    <ul class="current">
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../command-line-interface/">Command Line Interface</a>
                   </li>
@@ -111,7 +114,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                
+                <h1> Configuration</h1>
+<hr />
+<h3 id="introduction">Introduction</h3>
+<p>Project settings are configured by default using a YAML configuration file in the project directory named mkdocs.yml. You can specify another path for it by using the -f/--config-file option (see mkdocs build --help).</p>
+<h3 id="project-information">Project information</h3>
+<p>site_name
+This is a required setting, and should be a string that is used as the main title for the project documentation. For example:</p>
+<pre><code>site_name: Marshmallow Generator
+</code></pre>
               
             </div>
           </div><footer>

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/theme.css" />
     <link rel="stylesheet" href="css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="extra.css" rel="stylesheet" />
     
       <script>
         // Current page data
@@ -137,14 +138,44 @@
 <p><strong>MkDocs is currently still in development.</strong></p>
 <p>We're progressing quickly, but the documentation still needs filling in, and there are a few rough edges. The 1.0 release is planned to arrive in the next few months.</p>
 <hr />
-<p><strong><p> Host Anywhere</p></strong></p>
+<p><strong><h6> Host Anywhere</h6></strong>
+Builds completely static HTML sites that you can host on GitHub pages, Amazon S3, or anywhere else you choose.</p>
+<p><strong><h6>Great themes available</h6></strong>
+There's a stack of good looking themes included by default. Choose from bootstrap, readthedocs, or any of the 12 bootswatch themes.</p>
+<p><strong><h6>Preview your site as you work</h6></strong>
+The built-in devserver allows you to preview your documentation as you're writing it. It will even auto-reload whenever you save any changes, so all you need to do to see your latest edits is refresh your browser.</p>
+<p><strong><h6>Easy to customize</h6></strong>
+Get your project documentation looking just the way you want it by customizing the theme.</p>
 <h2 id="installation">Installation</h2>
+<p>In order to install MkDocs you'll need Python installed on your system, as well as the Python package manager, pip. You can check if you have these already installed like so:</p>
+<pre><code>$ python --version
+Python 2.7.2
+$ pip --version
+pip 1.5.2
+</code></pre>
 <h2 id="getting-started">Getting started</h2>
+<p>Getting started is super easy.</p>
 <h2 id="adding-pages">Adding pages</h2>
+<p>Go ahead and edit the doc/index.md document, and change the initial heading to MkLorum, then reload the site in your browser, and you should see the change take effect immediately.</p>
+<p>Let's also add a second page to our documentation:</p>
+<pre><code>$ curl 'jaspervdj.be/lorem-markdownum/markdown.txt' &gt; docs/about.md
+</code></pre>
 <h2 id="theming-our-documentation">Theming our documentation</h2>
+<p>While we're here can also change the configuration file to alter how the documentation is displayed. Let's go ahead and change the theme. Edit the mkdocs.yml file to the following:</p>
+<pre><code>site_name: MkLorum
+pages:
+- Home: index.md
+- About: about.md
+theme: readthedocs
+</code></pre>
 <h2 id="building-the-site">Building the site</h2>
+<p>That's looking good. We're ready to deploy the first pass of our MkLorum documentation now. Let's build the documentation.</p>
+<pre><code>$ mkdocs build
+</code></pre>
 <h2 id="deploying">Deploying</h2>
+<p>The documentation site that we've just built only uses static files so you'll be able to host it from pretty much anywhere. GitHub project pages and Amazon S3 are good hosting options. Upload the contents of the entire site directory to wherever you're hosting your website from and you're done. For specific instructions for a number of common hosts, see the Deploying your Docs page.</p>
 <h2 id="getting-help">Getting help</h2>
+<p>To get help with MkDocs, please use the discussion group, GitHub issues or the MkDocs IRC channel #mkdocs on freenode.</p>
               
             </div>
           </div><footer>
@@ -192,5 +223,5 @@
 
 <!--
 MkDocs version : 1.4.3
-Build Date UTC : 2023-07-12 04:02:44.678479+00:00
+Build Date UTC : 2023-07-18 22:29:56.086782+00:00
 -->
